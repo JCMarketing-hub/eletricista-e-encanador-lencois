@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eletricista e Encanador | Lençóis Paulista e Macatuba, 24 horas</title>
+<meta name="description" content="Eletricista e encanador em Lençóis Paulista e Macatuba: instalação e manutenção elétrica, hidráulica e reparos. Atendimento 24 horas e cartão de débito e crédito.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eletricista e Encanador em Lençóis Paulista">
+<meta property="og:description" content="Luz e água funcionando, a qualquer hora. Lençóis Paulista e Macatuba.">
+<meta name="theme-color" content="#14161C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314161C'/%3E%3Cpath d='M24 10 12 34h10l-3 20 15-26H24z' fill='%23FFB020'/%3E%3Cpath d='M44 22s10 11 10 19a10 10 0 0 1-20 0c0-8 10-19 10-19z' fill='%231E9BE8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#14161C;
+  --tinta-2:#1E2129;
+  --tinta-3:#2B2F3A;
+  --luz:#FFB020;
+  --agua:#1E9BE8;
+  --papel:#F4F2EC;
+  --cinza:#5E6370;
+  --linha:#E3E0D7;
+  --urgente:#E5484D;
+  --f:'Red Hat Display',system-ui,sans-serif;
+  --g:clamp(16px,4vw,48px);
+  --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--papel);color:var(--tinta);font:400 1.06rem/1.6 var(--f);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--luz);outline-offset:3px;border-radius:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.025em;line-height:1.04}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:54px;padding:0 1.5em;border-radius:14px;font:700 1.02rem/1 var(--f);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .2s}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-luz{background:var(--luz);color:var(--tinta)}
+.btn-luz:hover{background:#FFC24D;transform:translateY(-1px)}
+.btn-linha{border-color:rgba(255,255,255,.28);color:#fff}
+.btn-linha:hover{border-color:#fff}
+.btn-tinta{background:var(--tinta);color:#fff}
+.btn-tinta:hover{background:var(--tinta-3)}
+
+/* Topo */
+.topo{position:sticky;top:0;z-index:30;background:rgba(20,22,28,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff}
+.topo .wrap{display:flex;align-items:center;gap:26px;height:68px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.marca .ic{display:flex;gap:2px}
+.marca .ic span{width:20px;height:38px;display:grid;place-items:center;border-radius:10px 0 0 10px;background:var(--luz)}
+.marca .ic span+span{border-radius:0 10px 10px 0;background:var(--agua)}
+.marca .ic svg{width:14px;height:14px}
+.marca b{display:block;font-size:1.05rem;line-height:1.1}
+.marca small{display:block;font-size:.8rem;color:#A9AEBB}
+.topo nav{display:flex;gap:24px;font-size:.96rem;font-weight:500}
+.topo nav a{text-decoration:none;color:#C9CDD6}
+.topo nav a:hover{color:var(--luz)}
+.topo .btn{min-height:42px;font-size:.92rem;padding:0 1.1em;border-radius:12px}
+
+/* Hero dividido */
+.hero{position:relative;overflow:hidden;color:#fff;background:linear-gradient(90deg,var(--tinta) 0 50%,#0F2C44 50% 100%);padding:clamp(64px,9vw,128px) 0 clamp(72px,9vw,136px)}
+.simbolo{position:absolute;width:300px;height:300px;opacity:.12;pointer-events:none}
+.simbolo.s-luz{left:-40px;bottom:-50px}
+.simbolo.s-agua{right:-30px;top:-30px}
+.hero-box{position:relative;max-width:780px;margin:0 auto;text-align:center;padding:0 var(--g)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.chips span{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);font-weight:600;font-size:.88rem}
+.chips i{width:8px;height:8px;border-radius:50%;background:#3BD16F}
+h1{margin-top:20px;font-size:clamp(2.6rem,6vw,5rem);font-weight:900}
+h1 .l{color:var(--luz)}
+h1 .a{color:#5BC0FF}
+.lede{margin:18px auto 0;font-size:clamp(1.06rem,1.6vw,1.22rem);color:#CBD0DA;max-width:50ch}
+.acoes{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+
+/* Seções */
+.secao{padding:clamp(72px,9vw,116px) 0}
+.secao-branca{background:#fff}
+.cabeca{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(18px,4vw,60px);align-items:end;margin-bottom:clamp(30px,4.5vw,52px)}
+.rotulo{display:block;font-weight:800;font-size:.92rem;letter-spacing:.04em;margin-bottom:12px;color:#B8730A}
+h2{font-size:clamp(2.1rem,4.2vw,3.3rem)}
+.cabeca p{margin:0;color:var(--cinza);font-size:1.07rem}
+
+/* O que parou */
+.troca{display:inline-grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;border-radius:16px;background:#fff;border:1px solid var(--linha);margin-bottom:16px}
+.troca button{display:flex;align-items:center;gap:10px;min-height:50px;padding:0 22px;border:0;border-radius:11px;background:transparent;font:800 1.02rem/1 var(--f);color:var(--cinza);cursor:pointer}
+.troca button svg{width:20px;height:20px}
+.troca button[aria-pressed="true"][data-t="luz"]{background:var(--luz);color:var(--tinta)}
+.troca button[aria-pressed="true"][data-t="agua"]{background:var(--agua);color:#fff}
+.diag{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:18px;align-items:start}
+.probs{display:grid;gap:10px}
+.prob{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;min-height:62px;padding:12px 18px;border-radius:16px;border:1.5px solid var(--linha);background:#fff;font:700 1.02rem/1.25 var(--f);color:var(--tinta);text-align:left;cursor:pointer}
+.prob:hover{border-color:#B9B4A6}
+.prob .nivel{flex:none;font-size:.78rem;font-weight:800;padding:5px 10px;border-radius:999px;background:var(--papel);color:var(--cinza)}
+.prob .nivel.urg{background:#FDE8E8;color:var(--urgente)}
+.prob[aria-pressed="true"]{border-color:var(--tinta);background:var(--tinta);color:#fff}
+.prob[aria-pressed="true"] .nivel{background:rgba(255,255,255,.14);color:#fff}
+.resp{border-radius:24px;background:var(--tinta);color:#fff;padding:clamp(24px,3.5vw,38px);position:sticky;top:90px}
+.resp .tag{display:inline-block;padding:6px 12px;border-radius:999px;font-size:.82rem;font-weight:800;margin-bottom:14px}
+.resp .tag.urg{background:var(--urgente);color:#fff}
+.resp .tag.norm{background:rgba(255,255,255,.12);color:#fff}
+.resp h3{font-size:clamp(1.6rem,2.8vw,2.2rem);margin-bottom:18px}
+.passo{display:flex;gap:14px;padding:16px;border-radius:16px;background:var(--tinta-2);border:1px solid var(--tinta-3);margin-bottom:12px}
+.passo .n{flex:none;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:900;color:var(--tinta)}
+.passo b{display:block;font-size:.82rem;letter-spacing:.04em;color:#A9AEBB;margin-bottom:2px}
+.passo p{margin:0;color:#E4E6EB}
+.resp .btn{margin-top:8px}
+.resp small{display:block;margin-top:14px;color:#A9AEBB;font-size:.85rem}
+
+/* Serviços */
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lado{border-radius:26px;padding:clamp(26px,3.5vw,40px);position:relative;overflow:hidden}
+.lado-luz{background:#FFF4DC}
+.lado-agua{background:#E3F2FC}
+.lado .big{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;margin-bottom:18px}
+.lado-luz .big{background:var(--luz)}
+.lado-agua .big{background:var(--agua);color:#fff}
+.lado .big svg{width:32px;height:32px}
+.lado h3{font-size:1.9rem;margin-bottom:8px}
+.lado p{margin:0 0 18px;color:var(--cinza)}
+.lado ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lado li{padding:12px 14px;border-radius:12px;background:#fff;font-weight:600;font-size:.97rem}
+
+/* Por que */
+.motivos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.motivo{padding:24px;border-radius:20px;background:#fff;border:1px solid var(--linha)}
+.motivo .ic{width:46px;height:46px;border-radius:14px;background:var(--tinta);color:var(--luz);display:grid;place-items:center;margin-bottom:14px}
+.motivo .ic svg{width:24px;height:24px}
+.motivo h3{font-size:1.18rem;margin-bottom:6px}
+.motivo p{margin:0;color:var(--cinza);font-size:.96rem}
+
+/* Contato */
+.cta{border-radius:30px;background:linear-gradient(110deg,var(--tinta) 0 50%,#0F2C44 50% 100%);color:#fff;padding:clamp(30px,6vw,62px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);align-items:center}
+.cta h2{color:#fff}
+.cta p{margin:14px 0 24px;color:#CBD0DA;max-width:42ch;font-size:1.08rem}
+.cta dl{margin:0;display:grid;gap:12px}
+.cta dl div{padding:16px 20px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+.cta dt{font-size:.82rem;color:#A9AEBB;font-weight:700}
+.cta dd{margin:4px 0 0;font-weight:600}
+.cta .tel{font-size:1.5rem;font-weight:800;text-decoration:none;color:var(--luz);white-space:nowrap}
+
+footer.rodape{color:var(--cinza);font-size:.9rem;padding:28px 0 100px;border-top:1px solid var(--linha)}
+footer.rodape .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.zap{position:fixed;right:16px;bottom:16px;z-index:40;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:#fff;text-decoration:none;box-shadow:0 10px 24px -6px rgba(0,0,0,.45);transition:transform .15s,background .15s}
+.zap svg{width:30px;height:30px}
+.zap:hover{background:#1EBE5A;transform:scale(1.05)}
+
+@media (max-width:980px){
+  .cabeca,.diag,.duas,.cta{grid-template-columns:minmax(0,1fr)}
+  .topo nav{display:none}
+  .motivos{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .resp{position:static}
+  .cta{background:var(--tinta)}
+}
+@media (max-width:640px){
+  .hero{background:linear-gradient(180deg,var(--tinta) 0 50%,#0F2C44 50% 100%)}
+  .topo .btn{display:none}
+  .acoes .btn{width:100%}
+  .lado ul{grid-template-columns:1fr}
+  .troca{display:grid;width:100%}
+  .troca button{justify-content:center;padding:0 10px}
+}
+@media (max-width:480px){
+  .motivos{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#">
+      <span class="ic" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="#14161C"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3s7 7.6 7 12a7 7 0 0 1-14 0c0-4.4 7-12 7-12z"/></svg></span></span>
+      <span><b>Eletricista e Encanador</b><small>Lençóis Paulista e Macatuba</small></span>
+    </a>
+    <nav aria-label="Seções">
+      <a href="#parou">O que parou?</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-luz" data-wa href="https://wa.me/5514998841268">Chamar agora</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="titulo">
+  <svg class="simbolo s-luz" viewBox="0 0 24 24" fill="#FFB020" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+  <svg class="simbolo s-agua" viewBox="0 0 24 24" fill="#5BC0FF" aria-hidden="true"><path d="M12 3s7 7.6 7 12a7 7 0 0 1-14 0c0-4.4 7-12 7-12z"/></svg>
+    <div class="hero-box">
+      <div class="chips"><span><i aria-hidden="true"></i>Atendimento 24 horas</span><span>Cartão de débito e crédito</span></div>
+      <h1 id="titulo"><span class="l">Luz</span> e <span class="a">água</span> funcionando, a qualquer hora.</h1>
+      <p class="lede">Eletricista e encanador em um só contato. Instalação, conserto e manutenção para casas, comércios e empresas em Lençóis Paulista e Macatuba.</p>
+      <div class="acoes">
+        <a class="btn btn-luz" data-wa href="https://wa.me/5514998841268">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-linha" href="#parou">O que parou de funcionar?</a>
+      </div>
+    </div>
+</section>
+
+<section class="secao" id="parou" aria-labelledby="t-parou">
+  <div class="wrap">
+    <div class="cabeca">
+      <div><span class="rotulo">O que parou de funcionar?</span><h2 id="t-parou">O que fazer até o técnico chegar</h2></div>
+      <p>Escolha o problema e veja como evitar um estrago maior enquanto o atendimento não chega.</p>
+    </div>
+    <div class="troca" role="group" aria-label="Tipo de problema">
+      <button type="button" data-t="luz" aria-pressed="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Luz e elétrica</button>
+      <button type="button" data-t="agua" aria-pressed="false"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3s7 7.6 7 12a7 7 0 0 1-14 0c0-4.4 7-12 7-12z"/></svg>Água e encanamento</button>
+    </div>
+    <div class="diag">
+      <div class="probs" id="probs"></div>
+      <div class="resp" aria-live="polite">
+        <span class="tag" id="r-tag"></span>
+        <h3 id="r-t"></h3>
+        <div class="passo"><span class="n" id="n1">1</span><div><b>AGORA</b><p id="r-agora"></p></div></div>
+        <div class="passo"><span class="n" id="n2">2</span><div><b>NÃO FAÇA</b><p id="r-nao"></p></div></div>
+        <a class="btn btn-luz" id="r-wa" href="https://wa.me/5514998841268">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+          Chamar sobre este problema
+        </a>
+        <small>Dicas gerais de segurança. Em caso de choque, fogo ou cheiro de queimado forte, ligue para os Bombeiros (193).</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao secao-branca" id="servicos" aria-labelledby="t-serv">
+  <div class="wrap">
+    <div class="cabeca">
+      <div><span class="rotulo">Serviços</span><h2 id="t-serv">Um profissional para os dois problemas</h2></div>
+      <p>Muitos defeitos misturam água e eletricidade, como o chuveiro. Com um só contato, você resolve tudo de uma vez.</p>
+    </div>
+    <div class="duas">
+      <article class="lado lado-luz">
+        <span class="big"><svg viewBox="0 0 24 24" fill="#14161C"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+        <h3>Elétrica</h3>
+        <p>Instalação, reparos e manutenção na rede elétrica da casa, do comércio ou da empresa.</p>
+        <ul><li>Tomadas e interruptores</li><li>Disjuntores e quadro</li><li>Chuveiro e resistência</li><li>Iluminação</li><li>Fiação e reformas</li><li>Manutenção de redes</li></ul>
+      </article>
+      <article class="lado lado-agua">
+        <span class="big"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3s7 7.6 7 12a7 7 0 0 1-14 0c0-4.4 7-12 7-12z"/></svg></span>
+        <h3>Hidráulica</h3>
+        <p>Instalação e conserto de encanamento, para acabar com vazamento e falta de água.</p>
+        <ul><li>Vazamentos</li><li>Torneiras e registros</li><li>Descarga e caixa acoplada</li><li>Instalação hidráulica</li><li>Canos e conexões</li><li>Pressão da água</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="secao" aria-labelledby="t-porque">
+  <div class="wrap">
+    <div class="cabeca"><div><span class="rotulo">Por que chamar</span><h2 id="t-porque">Atendimento sem complicação</h2></div></div>
+    <div class="motivos">
+      <div class="motivo"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>24 horas</h3><p>Problema não tem hora para acontecer.</p></div>
+      <div class="motivo"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><h3>Cartão</h3><p>Débito e crédito aceitos.</p></div>
+      <div class="motivo"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9H3z"/></svg></span><h3>Casa e empresa</h3><p>Residências, comércios e empresas.</p></div>
+      <div class="motivo"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Perto de você</h3><p>Lençóis Paulista e Macatuba.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="contato" aria-labelledby="t-contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <div>
+        <h2 id="t-contato">Parou a luz ou a água?</h2>
+        <p>Mande uma mensagem contando o problema e, se puder, uma foto. O atendimento responde com o orçamento.</p>
+        <a class="btn btn-luz" data-wa href="https://wa.me/5514998841268">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+      <dl>
+        <div><dt>WhatsApp</dt><dd><a class="tel" data-wa href="https://wa.me/5514998841268">(14) 99884-1268</a></dd></div>
+        <div><dt>Endereço</dt><dd>R. Américo Luiz Casali, 267, Lençóis Paulista – SP</dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:oruam7oliveira.mao@gmail.com" style="text-decoration:none;word-break:break-all">oruam7oliveira.mao@gmail.com</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <span>Eletricista e Encanador. Lençóis Paulista e Macatuba – SP.</span>
+    <span>(14) 99884-1268</span>
+  </div>
+</footer>
+
+<a class="zap" data-wa href="https://wa.me/5514998841268" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+</a>
+
+<script>
+const NUM = '5514998841268';
+const linkWa = msg => 'https://wa.me/' + NUM + '?text=' + encodeURIComponent(msg);
+const abre = a => { a.target = '_blank'; a.rel = 'noopener'; };
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = linkWa('Olá! Vi o site e preciso de um eletricista/encanador.'); abre(a); });
+
+const problemas = {
+  luz: [
+    { t: 'Disjuntor desarma toda hora', u: false, agora: 'Desligue alguns aparelhos daquele circuito e religue o disjuntor uma vez só. Se desarmar de novo, deixe desligado.', nao: 'Não segure a alavanca do disjuntor nem troque por um maior. Ele está protegendo a fiação.' },
+    { t: 'Tomada esquentando ou com cheiro de queimado', u: true, agora: 'Tire os aparelhos da tomada e desligue o disjuntor daquele cômodo.', nao: 'Não use a tomada nem coloque benjamim ou extensão para aliviar.' },
+    { t: 'Chuveiro não esquenta', u: false, agora: 'Desligue o disjuntor do chuveiro antes de mexer em qualquer coisa.', nao: 'Não troque a resistência com o disjuntor ligado nem com o corpo molhado.' },
+    { t: 'Faltou luz só em uma parte da casa', u: false, agora: 'Veja no quadro se algum disjuntor desarmou e anote qual.', nao: 'Não abra o quadro nem mexa em fios soltos.' },
+    { t: 'Levou choque ao encostar em algo', u: true, agora: 'Desligue o disjuntor geral e não deixe ninguém tocar no aparelho ou na parede.', nao: 'Não religue até um eletricista verificar o aterramento.' }
+  ],
+  agua: [
+    { t: 'Cano estourado ou vazamento forte', u: true, agora: 'Feche o registro geral, que costuma ficar perto do hidrômetro ou da caixa d\'água.', nao: 'Não deixe a água escorrer perto de tomadas ou do quadro de luz.' },
+    { t: 'Torneira ou registro pingando', u: false, agora: 'Feche o registro daquele ponto, se tiver, e coloque um balde embaixo.', nao: 'Não aperte demais a torneira, isso estraga o reparo.' },
+    { t: 'Descarga não para de correr', u: false, agora: 'Feche o registro da descarga ou da caixa acoplada.', nao: 'Não force a alavanca nem o botão.' },
+    { t: 'Água fraca ou sem água', u: false, agora: 'Veja se a caixa d\'água tem água e se o registro geral está aberto.', nao: 'Não ligue bomba ou aquecedor sem água, eles podem queimar.' },
+    { t: 'Mancha de umidade na parede ou no teto', u: false, agora: 'Fotografe a mancha e observe se cresce com o uso de algum ponto de água.', nao: 'Não fure nem quebre a parede antes de achar a origem do vazamento.' }
+  ]
+};
+let tipo = 'luz', atual = 0;
+const probs = document.getElementById('probs');
+function lista(){
+  document.querySelectorAll('.troca button').forEach(b => b.setAttribute('aria-pressed', b.dataset.t === tipo));
+  probs.innerHTML = '';
+  problemas[tipo].forEach((p, i) => {
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'prob';
+    b.setAttribute('aria-pressed', i === atual);
+    b.innerHTML = '<span>' + p.t + '</span><span class="nivel' + (p.u ? ' urg' : '') + '">' + (p.u ? 'Urgente' : 'Comum') + '</span>';
+    b.onclick = () => { atual = i; lista(); };
+    probs.appendChild(b);
+  });
+  const p = problemas[tipo][atual];
+  const tag = document.getElementById('r-tag');
+  tag.textContent = p.u ? 'Urgente' : 'Comum'; tag.className = 'tag ' + (p.u ? 'urg' : 'norm');
+  document.getElementById('r-t').textContent = p.t;
+  document.getElementById('r-agora').textContent = p.agora;
+  document.getElementById('r-nao').textContent = p.nao;
+  const cor = tipo === 'luz' ? 'var(--luz)' : 'var(--agua)';
+  document.getElementById('n1').style.background = cor; document.getElementById('n2').style.background = cor;
+  const w = document.getElementById('r-wa'); w.className = 'btn ' + (tipo === 'luz' ? 'btn-luz' : 'btn-luz');
+  w.href = linkWa('Olá! Vi o site. Estou com este problema: ' + p.t.toLowerCase() + '. Podem me atender?'); abre(w);
+}
+document.querySelectorAll('.troca button').forEach(b => b.addEventListener('click', () => { tipo = b.dataset.t; atual = 0; lista(); }));
+lista();
+</script>
+</body>
+</html>
